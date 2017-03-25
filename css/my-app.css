@@ -58,6 +58,11 @@
 	top: -6px;
 }
 
+.material-icons.right.tni {
+	left: -27px;
+	top: -46px;
+}
+
 .open-popover {
 	margin-bottom: -32px;
 	height: 0;
