@@ -136,3 +136,6 @@ function clearForm() {
     myApp.formDeleteData('hstniform');
     $$(".page-content").scrollTop(0, 500);
 }
+setTimeout(function () {
+    checkForm();
+}, 100);
