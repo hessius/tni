@@ -53,7 +53,7 @@ var painVal = function () {
 };
 
 var riskVal = function () {
-    if ($$("input[name='risk-box']:checked").val() === "2") {
+    if ($$("input[name='risk-box']:checked").val() === "a") {
         return 2;
     } else if ($$("input[name='risk-box']:checked").length === 0) {
         return 0;
