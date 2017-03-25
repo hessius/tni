@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="HsTnI">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#4fd1d9">
+  <title>NSTEMI + HsTnI</title>
+  <!-- Path to Framework7 Library CSS-->
+  <link rel="stylesheet" href="css/framework7.keypad.min.css">
+  <link rel="stylesheet" href="css/framework7.material.min.css">
+  <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body>
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar-overlay"></div>
+  <!-- Views-->
+  <div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="right">
+            &nbsp;
+          </div>
+          <div class="center">Hantera högsensitivt TnI</div>
+          <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" data-popup=".popup-about" class="open-popup link icon-only">
+              <i class="material-icons">help_outline</i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pages">
+        <!-- Page, data-page contains page name-->
+        <div data-page="form" class="page">
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <form id="hstniform" class="store-data">
+              <br><br>
+              <div class="content-block-title">Kön</div>
+              <div class="list-block">
+                <ul>
+                  <!-- Single radio input -->
+                  <li>
+                    <label class="label-radio item-content">
+        <!-- Checked by default -->
+        <input type="radio" name="sex" value="f">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Kvinna</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="sex" value="m">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Man</div>
+        </div>
+      </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">Ålder</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="age" value="0">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">&lt; 45 år</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="age" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">45 - 65 år</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="age" value="2">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">&#8805; 65 år</div>
+        </div>
+      </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title floating-label">Troponinvärde</div>
+                        <div class="item-input">
+                          <input type="numpad" placeholder="Troponinvärde" name="hstnival" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">Smärtkaraktäristika
+                <a href="#" data-popover=".popover-hstnival" class="link open-popover">
+                  <i class="material-icons md-blue right">help_outline</i>
+                </a>
+              </div>
+
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="pain-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Central bröstsmärta</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="pain-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Utlöses vid fysisk / psykisk belastning</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="pain-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Går över i vila / med nitro</div>
+        </div>
+      </label>
+                  </li>
+                </ul>
+                <div class="popover popover-hstnival">
+                  <div class="popover-angle"></div>
+                  <div class="popover-inner">
+                    <div class="content-block">
+                      <p>Om smärtkaraktäristika</p>
+                      <p>1 Kriterium = Låg misstanke<br> 2 Kriterier = Intermediär misstanke<br> 3 Kriterier = Hög misstanke</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-block-title">EKG
+                <a href="#" data-popover=".popover-ecg" class="link open-popover">
+                  <i class="material-icons md-blue right">help_outline</i>
+                </a>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="ecg" value="0">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Normalt</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="ecg" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Ospecifika ST-sänkningar / Obedömbart EKG</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+        <input type="radio" name="ecg" value="2">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Signifikanta ST-sänkningar</div>
+        </div>
+      </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="popover popover-ecg">
+                <div class="popover-angle"></div>
+                <div class="popover-inner">
+                  <div class="content-block">
+                    <p>Om EKG-förändringar</p>
+                    <p>Ospecifika ST-sänkningar / Obedömbart EKG innefattar även RBBB, LBBB, kammarpacing
+                    </p>
+                    <p>Signifikanta ST-sänkningar innebär nedåtsluttande / horisontell ST-sänkning >1 mm i 2 avledningar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-block-title">Riskfaktorer
+                <a href="#" data-popover=".popover-risk" class="link open-popover">
+                  <i class="material-icons md-blue right">help_outline</i>
+                </a>
+              </div>
+
+              <div class="list-block">
+                <ul>
+
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="2">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Känd aterosklerotisk sjukdom</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Diabetes</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Rökning</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Hypertoni</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Hereditet för kranskärlssjukdom</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Övervikt (BMI > 30)</div>
+        </div>
+      </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+        <input type="checkbox" name="risk-box" value="1">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Hyperkolesterolemi</div>
+        </div>
+      </label>
+                  </li>
+                </ul>
+                <div class="popover popover-risk">
+                  <div class="popover-angle"></div>
+                  <div class="popover-inner">
+                    <div class="content-block">
+                      <p>Om riskfaktorer</p>
+                      <p>Om tidigare känd aterosklerotisk sjukdom ges 2 poäng</p>
+                      <p>I övrigt<br>1-2 Kriterier ger ett poäng<br>&#8805;3 Kriterier ger 2 poäng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" name="storetime" />
+            </form>
+            <br><br>
+            <div class="row">
+              <div class="col-25">
+              </div>
+              <div class="col-50">
+                <a class="button button-big button-fill button-raised color-red" href="javascript:clearForm();">Rensa</a>                </div>
+              <div class="col-25">
+              </div>
+            </div><br><br><br>
+          </div>
+          <!-- Bottom Toolbar-->
+          <div class="bottom-toolbar toolbar">
+            <div class="toolbar-inner">
+              <p class="first"></p>
+              <p class="second"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About Popup -->
+      <div class="popup popup-about">
+        <div class="content-block">
+          <p>Vad är detta?</p>
+          <p>Högsensitivt Troponin I är som namnet avslöjar en mycket sensitiv metod. Namnet syftar inte på den diagnostiska
+            sensitiveten (även om den också är mycket hög) utan istället på den analytiska sensitivteten.</p>
+          <p>HsTni kan med en mycket hög säkerhet känna av mycket låga koncentrationer av troponiner med mycket stor reproducerbarhet,
+            den analytiska variabiliteten är således mycket låg (till skillnad från många labprover där den analytiska variabiliteten
+            kan gå mot 10%). Det bör dock observeras att vid mycket små &Delta;-värden börjar man närma sig den analytiska
+            variabiliteten.
+          </p>
+          <p>I kliniskt bruk innebär denna känslighet att flödet kring patienter som söker för bröstsmärta måste stöpas om.
+            Det här verktyget är framtaget efter en modell från Akademiska Sjukhuset i Uppsala där man genom en anpassad
+            HEART-score delar upp patienter i hög respektive låg risk och utifrån det stratifierar baserat på troponinvärde
+            (som även tas i beaktning i HEART score).</p>
+          <p>Detta verktyg är framtaget för HsTnI-metoden Abbot ARCHITECT HighSensitivity Troponin I med de referensintervall
+            som gäller för Västmanland.</p>
+          <p>Varken detta verktyg eller det flödesschema som ligger till grund för det kan ersätta en läkares bedömning utan
+            finns till som ett hjälpmedel i hanteringen av dessa patienter.</p>
+          <p><a href="#" class="close-popup">Stäng</a></p>
+        </div>
+      </div>
+      <!-- Path to Framework7 Library JS-->
+      <script type="text/javascript" src="js/framework7.min.js"></script>
+      <script type="text/javascript" src="js/framework7.keypad.min.js"></script>
+      <!-- Path to your app js-->
+      <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
