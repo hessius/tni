@@ -36,12 +36,14 @@ var tniVal = function () {
     return parseInt($$("input[name='hstnival']").val());
 };
 var tniScore = function () {
-    if (tniVal() >= tniHigh()) {
-        return 2;
-    } else if (tniVal() < tniLow()) {
-        return 0;
-    } else {
-        return 1;
+    if (tniHigh()) {
+        if (tniVal() >= tniHigh()) {
+            return 2;
+        } else if (tniVal() < tniLow()) {
+            return 0;
+        } else {
+            return 1;
+        }
     }
 };
 var painVal = function () {
@@ -65,6 +67,11 @@ var riskVal = function () {
 };
 
 function checkForm() {
+    if ($$("input[name='age']:checked").val() || painVal() > 0 || $$("input[name='ecg']:checked").val() || $$("input[name='risk-box']:checked").val() || $$("input[name='hstnival']").val() !== "") {
+        $$("#clearbtn").show();
+    } else {
+        $$("#clearbtn").hide();
+    }
     var heartscore = 0;
     heartscore = tniScore() + parseInt($$("input[name='age']:checked").val()) + painVal() + parseInt($$("input[name='ecg']:checked").val()) + riskVal();
     if (heartscore < 4) {
@@ -110,8 +117,10 @@ function checkForm() {
     }
     if (heartscore > 0 && tniVal() > -1) {
         $$(".bottom-toolbar").show();
+        $$("#clearbtn").addClass("bmarg");
     } else if (tniVal() > -1 && sex() && $$("input[name='age']:checked").val() && $$("input[name='ecg']:checked").val()) {
         $$(".bottom-toolbar").show();
+        $$("#clearbtn").addClass("bmarg");
     }
 }
 $$('form').change(function () {
@@ -135,6 +144,16 @@ function clearForm() {
     document.getElementById("hstniform").reset();
     myApp.formDeleteData('hstniform');
     $$(".page-content").scrollTop(0, 500);
+    $$('.bottom-toolbar').animate({
+        'margin-bottom': -110,
+    }, {
+        duration: 300,
+        easing: 'swing',
+    });
+    setTimeout(function () {
+        $$(".bottom-toolbar").hide().css('margin-bottom', 0);
+        $$("#clearbtn").removeClass("bmarg").hide();
+    }, 500);
 }
 setTimeout(function () {
     checkForm();

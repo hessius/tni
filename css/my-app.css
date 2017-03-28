@@ -1,7 +1,3 @@
-.navbar-inner .center {
-	/*margin: auto;*/
-}
-
 .material-icons.md-18 {
 	font-size: 18px;
 }
@@ -80,6 +76,15 @@
 	display: block;
 	justify-content: normal;
 	text-align: center;
+}
+
+#clearbtn {
+	display: none;
+	margin-bottom: 50px
+}
+
+#clearbtn.bmarg {
+	margin-bottom: 150px;
 }
 
 
