@@ -48,12 +48,15 @@
           <div class="page-content">
             <form id="hstniform" class="store-data">
               <br><br>
-              <div class="content-block-title">Kön</div>
-              <div class="list-block">
-                <ul>
-                  <!-- Single radio input -->
-                  <li>
-                    <label class="label-radio item-content">
+              <div class="row">
+                <div class="col-0 tablet-20"></div>
+                <div class="col-100 tablet-60">
+                  <div class="content-block-title">Kön</div>
+                  <div class="list-block">
+                    <ul>
+                      <!-- Single radio input -->
+                      <li>
+                        <label class="label-radio item-content">
         <!-- Checked by default -->
         <input type="radio" name="sex" value="f">
         <div class="item-media">
@@ -63,9 +66,9 @@
           <div class="item-title">Kvinna</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-radio item-content">
+                      </li>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="sex" value="m">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -74,14 +77,14 @@
           <div class="item-title">Man</div>
         </div>
       </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-block-title">Ålder</div>
-              <div class="list-block">
-                <ul>
-                  <li>
-                    <label class="label-radio item-content">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content-block-title">Ålder</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="age" value="0">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -90,9 +93,9 @@
           <div class="item-title">&lt; 45 år</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-radio item-content">
+                      </li>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="age" value="1">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -101,9 +104,9 @@
           <div class="item-title">45 - 65 år</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-radio item-content">
+                      </li>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="age" value="2">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -112,54 +115,54 @@
           <div class="item-title">&#8805; 65 år</div>
         </div>
       </label>
-                  </li>
-                </ul>
-              </div>
+                      </li>
+                    </ul>
+                  </div>
 
-              <div class="list-block">
-                <ul>
-                  <li>
-                    <div class="item-content">
-                      <div class="item-inner">
-                        <div class="item-title floating-label">Troponinvärde</div>
-                        <div class="item-input">
-                          <input type="numpad" placeholder="Troponinvärde" name="hstnival" />
+                  <div class="list-block">
+                    <ul>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title floating-label">Troponinvärde</div>
+                            <div class="item-input">
+                              <input type="numpad" placeholder="Troponinvärde" name="hstnival" />
+                            </div>
+                          </div>
                         </div>
+                        <a href="#" data-popover=".popover-hstnival" class="link open-popover">
+                          <i class="material-icons md-blue right tni">help_outline</i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="popover popover-hstnival">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                      <div class="content-block">
+                        <p>Om troponinvärde</p>
+                        <p>Detta verktyg är framtaget för Abbot ARCHITECT HsTnI med referensintervall enligt nedan i ng/l.</p>
+                        <p>I HEART-score:<br>
+                          <div class="row">
+                            <div class="col-50">Kvinnor:<br> &lt; 16 &mdash; 0p<br> 16 - 47 &mdash; 1p<br> &gt; 47 &mdash; 2p</div>
+                            <div class="col-50">Män:<br> &lt; 35 &mdash; 0p<br> 35 - 104 &mdash; 1p<br> &gt; 104 &mdash; 2p</div>
+                          </div>
+                        </p>
+                        <p>I tolkning av HEART-score används utöver könsspecifik nedre cut-off enligt ovan även &lt; 5 för att
+                          avskriva AKS hos lågriskpatient.</p>
                       </div>
                     </div>
-                    <a href="#" data-popover=".popover-hstnival" class="link open-popover">
-                      <i class="material-icons md-blue right tni">help_outline</i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="popover popover-hstnival">
-                <div class="popover-angle"></div>
-                <div class="popover-inner">
-                  <div class="content-block">
-                    <p>Om troponinvärde</p>
-                    <p>Detta verktyg är framtaget för Abbot ARCHITECT HsTnI med referensintervall enligt nedan i ng/l.</p>
-                    <p>I HEART-score:<br>
-                      <div class="row">
-                        <div class="col-50">Kvinnor:<br> &lt; 16 &mdash; 0p<br> 16 - 47 &mdash; 1p<br> &gt; 47 &mdash; 2p</div>
-                        <div class="col-50">Män:<br> &lt; 35 &mdash; 0p<br> 35 - 104 &mdash; 1p<br> &gt; 104 &mdash; 2p</div>
-                      </div>
-                    </p>
-                    <p>I tolkning av HEART-score används utöver könsspecifik nedre cut-off enligt ovan även &lt; 5 för att avskriva
-                      AKS hos lågriskpatient.</p>
                   </div>
-                </div>
-              </div>
-              <div class="content-block-title">Smärtkaraktäristika
-                <a href="#" data-popover=".popover-pain" class="link open-popover">
-                  <i class="material-icons md-blue right">help_outline</i>
-                </a>
-              </div>
+                  <div class="content-block-title">Smärtkaraktäristika
+                    <a href="#" data-popover=".popover-pain" class="link open-popover">
+                      <i class="material-icons md-blue right">help_outline</i>
+                    </a>
+                  </div>
 
-              <div class="list-block">
-                <ul>
-                  <li>
-                    <label class="label-checkbox item-content">
+                  <div class="list-block">
+                    <ul>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="pain-box" value="a">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -168,9 +171,9 @@
           <div class="item-title">Central bröstsmärta</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="pain-box" value="b">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -179,9 +182,9 @@
           <div class="item-title">Utlöses vid fysisk / psykisk belastning</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="pain-box" value="c">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -190,27 +193,27 @@
           <div class="item-title">Går över i vila / med nitro</div>
         </div>
       </label>
-                  </li>
-                </ul>
-                <div class="popover popover-pain">
-                  <div class="popover-angle"></div>
-                  <div class="popover-inner">
-                    <div class="content-block">
-                      <p>Om smärtkaraktäristika</p>
-                      <p>1 Kriterium = Låg misstanke<br> 2 Kriterier = Intermediär misstanke<br> 3 Kriterier = Hög misstanke</p>
+                      </li>
+                    </ul>
+                    <div class="popover popover-pain">
+                      <div class="popover-angle"></div>
+                      <div class="popover-inner">
+                        <div class="content-block">
+                          <p>Om smärtkaraktäristika</p>
+                          <p>1 Kriterium = Låg misstanke<br> 2 Kriterier = Intermediär misstanke<br> 3 Kriterier = Hög misstanke</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="content-block-title">EKG
-                <a href="#" data-popover=".popover-ecg" class="link open-popover">
-                  <i class="material-icons md-blue right">help_outline</i>
-                </a>
-              </div>
-              <div class="list-block">
-                <ul>
-                  <li>
-                    <label class="label-radio item-content">
+                  <div class="content-block-title">EKG
+                    <a href="#" data-popover=".popover-ecg" class="link open-popover">
+                      <i class="material-icons md-blue right">help_outline</i>
+                    </a>
+                  </div>
+                  <div class="list-block">
+                    <ul>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="ecg" value="0">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -219,9 +222,9 @@
           <div class="item-title">Normalt</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-radio item-content">
+                      </li>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="ecg" value="1">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -230,9 +233,9 @@
           <div class="item-title">Ospecifika ST-sänkningar / Obedömbart EKG</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-radio item-content">
+                      </li>
+                      <li>
+                        <label class="label-radio item-content">
         <input type="radio" name="ecg" value="2">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
@@ -241,31 +244,31 @@
           <div class="item-title">Signifikanta ST-sänkningar</div>
         </div>
       </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="popover popover-ecg">
-                <div class="popover-angle"></div>
-                <div class="popover-inner">
-                  <div class="content-block">
-                    <p>Om EKG-förändringar</p>
-                    <p>Ospecifika ST-sänkningar / Obedömbart EKG innefattar även RBBB, LBBB, kammarpacing
-                    </p>
-                    <p>Signifikanta ST-sänkningar innebär nedåtsluttande / horisontell ST-sänkning >1 mm i 2 avledningar</p>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </div>
-              <div class="content-block-title">Riskfaktorer
-                <a href="#" data-popover=".popover-risk" class="link open-popover">
-                  <i class="material-icons md-blue right">help_outline</i>
-                </a>
-              </div>
+                  <div class="popover popover-ecg">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                      <div class="content-block">
+                        <p>Om EKG-förändringar</p>
+                        <p>Ospecifika ST-sänkningar / Obedömbart EKG innefattar även RBBB, LBBB, kammarpacing
+                        </p>
+                        <p>Signifikanta ST-sänkningar innebär nedåtsluttande / horisontell ST-sänkning >1 mm i 2 avledningar</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-block-title">Riskfaktorer
+                    <a href="#" data-popover=".popover-risk" class="link open-popover">
+                      <i class="material-icons md-blue right">help_outline</i>
+                    </a>
+                  </div>
 
-              <div class="list-block">
-                <ul>
+                  <div class="list-block">
+                    <ul>
 
-                  <li>
-                    <label class="label-checkbox item-content">
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="a">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -274,9 +277,9 @@
           <div class="item-title">Känd aterosklerotisk sjukdom</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="b">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -285,9 +288,9 @@
           <div class="item-title">Diabetes</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="c">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -296,9 +299,9 @@
           <div class="item-title">Rökning</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="d">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -307,9 +310,9 @@
           <div class="item-title">Hypertoni</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="e">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -318,9 +321,9 @@
           <div class="item-title">Hereditet för kranskärlssjukdom</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="f">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -329,9 +332,9 @@
           <div class="item-title">Övervikt (BMI > 30)</div>
         </div>
       </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox item-content">
+                      </li>
+                      <li>
+                        <label class="label-checkbox item-content">
         <input type="checkbox" name="risk-box" value="g">
         <div class="item-media">
           <i class="icon icon-form-checkbox"></i>
@@ -340,20 +343,23 @@
           <div class="item-title">Hyperkolesterolemi</div>
         </div>
       </label>
-                  </li>
-                </ul>
-                <div class="popover popover-risk">
-                  <div class="popover-angle"></div>
-                  <div class="popover-inner">
-                    <div class="content-block">
-                      <p>Om riskfaktorer</p>
-                      <p>Om tidigare känd aterosklerotisk sjukdom ges 2 poäng</p>
-                      <p>I övrigt<br>1-2 Kriterier ger ett poäng<br>&#8805;3 Kriterier ger 2 poäng</p>
+                      </li>
+                    </ul>
+                    <div class="popover popover-risk">
+                      <div class="popover-angle"></div>
+                      <div class="popover-inner">
+                        <div class="content-block">
+                          <p>Om riskfaktorer</p>
+                          <p>Om tidigare känd aterosklerotisk sjukdom ges 2 poäng</p>
+                          <p>I övrigt<br>1-2 Kriterier ger ett poäng<br>&#8805;3 Kriterier ger 2 poäng</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <input type="hidden" name="storetime" />
                 </div>
+                <div class="col-0 tablet-20"></div>
               </div>
-              <input type="hidden" name="storetime" />
             </form>
             <br><br>
             <div class="row">
@@ -408,7 +414,11 @@
         <!-- Path to Framework7 Library JS-->
         <script type="text/javascript" src="js/framework7.min.js"></script>
         <script type="text/javascript" src="js/framework7.keypad.min.js"></script>
+        <script type="text/javascript" src="https://raw.githubusercontent.com/cubiq/add-to-homescreen/master/src/addtohomescreen.min.js"></script>
         <!-- Path to your app js-->
+        <script>
+          addToHomescreen();
+        </script>
         <script type="text/javascript" src="js/my-app.js"></script>
 </body>
 
