@@ -444,6 +444,13 @@
 	margin: 0 auto 0.4em auto;
 }
 
+@media only screen and (min-device-width: 768px) {
+	.picker-modal {
+		width: 30%;
+		left: 35%;
+	}
+}
+
 @media only screen and (orientation: landscape) {
 	.ath-container.ath-phone {
 		width: 24em;
