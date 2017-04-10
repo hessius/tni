@@ -133,7 +133,7 @@ $$('input[type="numpad"]').focus(function () {
   if(msie>-1 || trident>-1){
     setTimeout(function () {
   $$('.icon-keypad-delete').addClass('material-icons').html('backspace').removeClass('icon-keypad-delete');
-    }, 100);
+    }, 10);
 }
 });
 
