@@ -131,7 +131,9 @@ $$('form').change(function () {
 $$('input[type="numpad"]').focus(function () {
     $$('input[type="numpad"]')[0].f7Keypad.setValue('');
   if(msie>-1 || trident>-1){
+    setTimeout(function () {
   $$('.icon-keypad-delete').addClass('material-icons').html('backspace').removeClass('icon-keypad-delete');
+    }, 100);
 }
 });
 
