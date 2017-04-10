@@ -159,8 +159,8 @@ setTimeout(function () {
     checkForm();
 }, 100);
   var ua = window.navigator.userAgent;
-var trident = ua.indexOf('Trident');
+  var trident = ua.indexOf('Trident');
   var msie = ua.indexOf('MSIE');
-if(msie>-1||trident>-1){
-  $('input').attr('placeholder','');
+if(msie>-1 || trident>-1){
+  $$('input').attr('placeholder','');
 }
