@@ -130,6 +130,9 @@ $$('form').change(function () {
 
 $$('input[type="numpad"]').focus(function () {
     $$('input[type="numpad"]')[0].f7Keypad.setValue('');
+  if(msie>-1 || trident>-1){
+  $$('.icon-keypad-delete').addClass('material-icons').html('backspace').removeClass('icon-keypad-delete');
+}
 });
 
 if (parseInt((new Date().getTime()) - parseInt($$("input[name='storetime']").val())) > 300000) {
