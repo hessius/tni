@@ -158,7 +158,7 @@ function clearForm() {
 setTimeout(function () {
     checkForm();
 }, 100);
-
+  var ua = window.navigator.userAgent;
   var msie = ua.indexOf('MSIE ');
 if(msie>0){
   $('input').attr('placeholder','');
