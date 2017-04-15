@@ -168,4 +168,4 @@ setTimeout(function () {
   var msie = ua.indexOf('MSIE');
 if(msie>-1 || trident>-1){
   $$('input').attr('placeholder','');
-}
+} 

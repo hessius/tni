@@ -354,7 +354,8 @@
 
 /* applied only if the application icon is shown */
 
-.ath-container.ath-icon {}
+
+/*.ath-container.ath-icon {}*/
 
 .ath-action-icon {
 	display: inline-block;
